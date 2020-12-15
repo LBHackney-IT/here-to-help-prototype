@@ -9,10 +9,6 @@ class Resident {
         Helper::render(array("resident", "resident"), array("one", "profile"), false, false, true);
     }
 
-    function oneResident2() {
-        Helper::render(array("resident", "resident"), array("one", "profile2"), false, false, true);
-    }
-
     function editResident() {
         Helper::render(array("resident", "resident"), array("one", "edit"), false, false, true);
     }
