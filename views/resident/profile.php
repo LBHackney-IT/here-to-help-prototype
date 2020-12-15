@@ -59,6 +59,7 @@
           <?php
             if($_REQUEST['received']=='true'):
                 ?>
+            <a href="/oneresident?#past-week" class="govuk-back-link  lbh-back-link">All</a>
             <h4>Contact tracing</h4>
                 <table class="govuk-table">
                     <thead class="govuk-table__head">

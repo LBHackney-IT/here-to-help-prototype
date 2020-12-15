@@ -4130,7 +4130,9 @@ html {
         left: 0; }
     .js-enabled .govuk-tabs__panel {
         margin-bottom: 0;
-        padding: 30px 20px;
+        /*ben-d758*/
+        padding: 0 30px 20px;
+        /*ben-d758*/
         border: 1px solid #b1b4b6;
         border-top: 0; } }
 @media (min-width: 40.0625em) and (min-width: 40.0625em) {
@@ -4355,6 +4357,7 @@ label[for="HelpNeeded-3"] {
 * + li {
     margin-top: 0;
 }
+
 
 
 
