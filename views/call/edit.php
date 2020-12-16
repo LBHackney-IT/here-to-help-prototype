@@ -2,25 +2,6 @@
     <div class="govuk-grid-row">
         <div class="govuk-grid-column-one-half">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             <div class="govuk-form-group lbh-form-group">
 
                 <fieldset class="govuk-fieldset">
@@ -30,13 +11,9 @@
                         Call type required
 
                     </legend>
-
+                    <br />
 
                     <div class="govuk-radios govuk-radios--inline lbh-radios">
-
-
-
-
 
                         <div class="govuk-radios__item">
                             <input class="govuk-radios__input" id="HelpNeeded" name="HelpNeeded" type="radio" value="Contact Tracing">
@@ -46,12 +23,6 @@
 
                         </div>
 
-
-
-
-
-
-
                         <div class="govuk-radios__item">
                             <input class="govuk-radios__input" id="HelpNeeded-2" name="HelpNeeded" type="radio" value="Shielding">
                             <label class="govuk-label govuk-radios__label" for="HelpNeeded-2">
@@ -59,12 +30,6 @@
                             </label>
 
                         </div>
-
-
-
-
-
-
 
                         <div class="govuk-radios__item">
                             <input class="govuk-radios__input" id="HelpNeeded-3" name="HelpNeeded" type="radio" value="Help Request" <?=$_REQUEST['new']=='true'?" checked='checked' ":""?>>
@@ -129,13 +94,9 @@
                         Did you make a call?
 
                     </legend>
-
+                    <br />
 
                     <div class="govuk-radios  lbh-radios govuk-radios--conditional" data-module="govuk-radios">
-
-
-
-
 
                         <div class="govuk-radios__item">
                             <input class="govuk-radios__input" id="CallMade" name="CallMade" type="radio" value="yes" aria-controls="conditional-CallMade" aria-expanded="false">
@@ -147,26 +108,6 @@
 
                         <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-CallMade">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                             <div class="govuk-form-group lbh-form-group">
 
                                 <fieldset class="govuk-fieldset">
@@ -177,12 +118,7 @@
 
                                     </legend>
 
-
                                     <div class="govuk-radios govuk-radios--inline lbh-radios govuk-radios--conditional" data-module="govuk-radios">
-
-
-
-
 
                                         <div class="govuk-radios__item">
                                             <input class="govuk-radios__input" id="CallDetail" name="CallDetail" type="radio" value="spoke_to_resident" aria-controls="conditional-CallDetail" aria-expanded="false">
@@ -198,83 +134,14 @@
                                                 <div class="display-spoke-to-resident">
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                                                     <div class="govuk-form-group lbh-form-group">
 
-  <span id="CallOutcome-hint" class="govuk-hint  lbh-hint">
-    Select a call outcome
-  </span>
+                                                          <span id="CallOutcome-hint" class="govuk-hint  lbh-hint">
+                                                            Select a call outcome
+                                                          </span>
 
 
                                                         <div class="govuk-checkboxes  lbh-checkboxes">
-
-
-
-
-
-
 
 
                                                             <div class="govuk-checkboxes__item">
@@ -285,14 +152,6 @@
 
                                                             </div>
 
-
-
-
-
-
-
-
-
                                                             <div class="govuk-checkboxes__item">
                                                                 <input class="govuk-checkboxes__input" id="CallOutcome-2" name="CallOutcome" type="checkbox" value="refused_to_engage" aria-describedby="CallOutcome-hint">
                                                                 <label class="govuk-label govuk-checkboxes__label" for="CallOutcome-2">
@@ -301,14 +160,6 @@
 
                                                             </div>
 
-
-
-
-
-
-
-
-
                                                             <div class="govuk-checkboxes__item">
                                                                 <input class="govuk-checkboxes__input" id="CallOutcome-3" name="CallOutcome" type="checkbox" value="follow_up_requested" aria-describedby="CallOutcome-hint">
                                                                 <label class="govuk-label govuk-checkboxes__label" for="CallOutcome-3">
@@ -316,14 +167,6 @@
                                                                 </label>
 
                                                             </div>
-
-
-
-
-
-
-
-
 
                                                             <div class="govuk-checkboxes__item">
                                                                 <input class="govuk-checkboxes__input" id="CallOutcome-4" name="CallOutcome" type="checkbox" value="call_rescheduled" aria-describedby="CallOutcome-hint">
@@ -347,12 +190,6 @@
                                             </div>
 
                                         </div>
-
-
-
-
-
-
 
                                         <div class="govuk-radios__item">
                                             <input class="govuk-radios__input" id="CallDetail-2" name="CallDetail" type="radio" value="call_attempted" aria-controls="conditional-CallDetail-2" aria-expanded="false">
@@ -432,9 +269,9 @@
 
                                                 <div class="govuk-form-group lbh-form-group">
 
-  <span id="CallOutcome-hint" class="govuk-hint  lbh-hint">
-    Select a call outcome
-  </span>
+                                                  <span id="CallOutcome-hint" class="govuk-hint  lbh-hint">
+                                                    Select a call outcome
+                                                  </span>
 
 
                                                     <div class="govuk-checkboxes  lbh-checkboxes">
@@ -739,28 +576,14 @@
                                 First name
 
                             </legend>
+                            <br />
 
                         </fieldset>
 
-
-
-
-
-
-
-
-
-
-
-
-
                         <div class="govuk-form-group lbh-form-group">
 
-
-
-                            <input class="govuk-input  lbh-input" id="FirstName" name="FirstName" type="text">
+                            <input class="govuk-input  lbh-input" id="FirstName" name="FirstName" type="text" style="margin-bottom: 20px;">
                         </div>
-
 
                     </div>
                     <div class="govuk-grid-column-one-half">
@@ -768,7 +591,7 @@
 
                         <fieldset class="govuk-fieldset lbh-fieldset">
 
-                            <legend class="govuk-fieldset__legend">
+                            <legend class="govuk-fieldset__legend" style="margin-bottom: 30px;">
 
                                 Last name
 
@@ -776,25 +599,10 @@
 
                         </fieldset>
 
-
-
-
-
-
-
-
-
-
-
-
-
                         <div class="govuk-form-group lbh-form-group">
 
-
-
-                            <input class="govuk-input  lbh-input" id="LastName" name="LastName" type="text">
+                            <input class="govuk-input  lbh-input" id="LastName" name="LastName" type="text" style="margin-bottom: 20px;">
                         </div>
-
 
                     </div>
                 </div>
@@ -802,48 +610,23 @@
                 <div class="govuk-grid-row">
                     <div class="govuk-grid-column-one-half">
                         <h3 class="lbh-heading-h3">Contact telephone</h3>
-
-
-
-
-
-
-
-
-
-
-
+                        <br />
 
                         <div class="govuk-form-group lbh-form-group">
 
+                            <input class="govuk-input  lbh-input" id="ContactTelephoneNumber" name="ContactTelephoneNumber" type="tel" style="margin-bottom: 20px;">
 
-
-                            <input class="govuk-input  lbh-input" id="ContactTelephoneNumber" name="ContactTelephoneNumber" type="tel">
                         </div>
-
 
                     </div>
                     <div class="govuk-grid-column-one-half">
                         <h3 class="lbh-heading-h3">Contact mobile (Optional)</h3>
-
-
-
-
-
-
-
-
-
-
-
+                        <br />
 
                         <div class="govuk-form-group lbh-form-group">
 
-
-
-                            <input class="govuk-input  lbh-input" id="ContactMobileNumber" name="ContactMobileNumber" type="tel">
+                            <input class="govuk-input  lbh-input" id="ContactMobileNumber" name="ContactMobileNumber" type="tel" style="margin-bottom: 20px;">
                         </div>
-
 
                     </div>
                 </div>
@@ -851,25 +634,12 @@
                 <div class="govuk-grid-row">
                     <div class="govuk-grid-column-one-half">
                         <h3 class="lbh-heading-h3">Email address (Optional)</h3>
-
-
-
-
-
-
-
-
-
-
-
+                        <br />
 
                         <div class="govuk-form-group lbh-form-group">
 
-
-
-                            <input class="govuk-input  lbh-input" id="EmailAddress" name="EmailAddress" type="text">
+                            <input class="govuk-input  lbh-input" id="EmailAddress" name="EmailAddress" type="text" style="margin-bottom: 20px;">
                         </div>
-
 
                     </div>
                     <div class="govuk-grid-column-one-half">
@@ -878,21 +648,6 @@
                 </div>
 
                 <h3 class="lbh-heading-h3">Date of birth</h3>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                 <div class="govuk-form-group lbh-form-group">
 
@@ -917,6 +672,7 @@
 
 
                                 <input class="govuk-input govuk-date-input__input govuk-input--width-2 " id="DobMonth" name="DobMonth" type="text" pattern="[0-9]*" inputmode="numeric">
+
                             </div>
                         </div>
 
@@ -926,43 +682,16 @@
                                     Year
                                 </label>
 
-
                                 <input class="govuk-input govuk-date-input__input govuk-input--width-4 " id="DobYear" name="DobYear" type="text" pattern="[0-9]*" inputmode="numeric">
                             </div>
                         </div>
 
                     </div>
+                    <br />
 
                 </div>
 
-
-
-
                 <hr>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                 <div class="govuk-form-group lbh-form-group">
 
@@ -973,13 +702,9 @@
                             How many children under the age of 18 are in your household?
 
                         </legend>
-
+                        <br />
 
                         <div class="govuk-radios govuk-radios--inline lbh-radios">
-
-
-
-
 
                             <div class="govuk-radios__item">
                                 <input class="govuk-radios__input" id="NumberOfChildrenUnder18" name="NumberOfChildrenUnder18" type="radio" value="0">
@@ -990,11 +715,6 @@
                             </div>
 
 
-
-
-
-
-
                             <div class="govuk-radios__item">
                                 <input class="govuk-radios__input" id="NumberOfChildrenUnder18-2" name="NumberOfChildrenUnder18" type="radio" value="1">
                                 <label class="govuk-label govuk-radios__label" for="NumberOfChildrenUnder18-2">
@@ -1002,12 +722,6 @@
                                 </label>
 
                             </div>
-
-
-
-
-
-
 
                             <div class="govuk-radios__item">
                                 <input class="govuk-radios__input" id="NumberOfChildrenUnder18-3" name="NumberOfChildrenUnder18" type="radio" value="2">
@@ -1017,12 +731,6 @@
 
                             </div>
 
-
-
-
-
-
-
                             <div class="govuk-radios__item">
                                 <input class="govuk-radios__input" id="NumberOfChildrenUnder18-4" name="NumberOfChildrenUnder18" type="radio" value="3">
                                 <label class="govuk-label govuk-radios__label" for="NumberOfChildrenUnder18-4">
@@ -1030,12 +738,6 @@
                                 </label>
 
                             </div>
-
-
-
-
-
-
 
                             <div class="govuk-radios__item">
                                 <input class="govuk-radios__input" id="NumberOfChildrenUnder18-5" name="NumberOfChildrenUnder18" type="radio" value="4">
@@ -1045,12 +747,6 @@
 
                             </div>
 
-
-
-
-
-
-
                             <div class="govuk-radios__item">
                                 <input class="govuk-radios__input" id="NumberOfChildrenUnder18-6" name="NumberOfChildrenUnder18" type="radio" value="5 or more">
                                 <label class="govuk-label govuk-radios__label" for="NumberOfChildrenUnder18-6">
@@ -1059,16 +755,10 @@
 
                             </div>
 
-
-
-
                         </div>
                     </fieldset>
 
-
                 </div>
-
-
 
                 <!-- End Bio section -->
 
@@ -1085,154 +775,6 @@
             <div id="default-example-content-2" class="govuk-accordion__section-content" aria-labelledby="default-example-heading-2">
                 <!-- Section 2 -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 <div class="govuk-form-group lbh-form-group">
 
                     <fieldset class="govuk-fieldset" aria-describedby="what_coronavirus_help-hint">
@@ -1243,20 +785,11 @@
 
                         </legend>
 
-
                         <span id="what_coronavirus_help-hint" class="govuk-hint  lbh-hint">
     Select all that apply
   </span>
 
-
                         <div class="govuk-checkboxes govuk-checkboxes--inline lbh-checkboxes" id="what_coronavirus_help">
-
-
-
-
-
-
-
 
                             <div class="govuk-checkboxes__item">
                                 <input class="govuk-checkboxes__input" id="what_coronavirus_help" name="what_coronavirus_help" type="checkbox" value="accessing food">
@@ -1266,14 +799,6 @@
 
                             </div>
 
-
-
-
-
-
-
-
-
                             <div class="govuk-checkboxes__item">
                                 <input class="govuk-checkboxes__input" id="what_coronavirus_help-2" name="what_coronavirus_help" type="checkbox" value="food via supermarket">
                                 <label class="govuk-label govuk-checkboxes__label" for="what_coronavirus_help-2">
@@ -1281,14 +806,6 @@
                                 </label>
 
                             </div>
-
-
-
-
-
-
-
-
 
                             <div class="govuk-checkboxes__item">
                                 <input class="govuk-checkboxes__input" id="what_coronavirus_help-3" name="what_coronavirus_help" type="checkbox" value="nss form support">
@@ -1298,14 +815,6 @@
 
                             </div>
 
-
-
-
-
-
-
-
-
                             <div class="govuk-checkboxes__item">
                                 <input class="govuk-checkboxes__input" id="what_coronavirus_help-4" name="what_coronavirus_help" type="checkbox" value="shielding guidance">
                                 <label class="govuk-label govuk-checkboxes__label" for="what_coronavirus_help-4">
@@ -1313,14 +822,6 @@
                                 </label>
 
                             </div>
-
-
-
-
-
-
-
-
 
                             <div class="govuk-checkboxes__item">
                                 <input class="govuk-checkboxes__input" id="what_coronavirus_help-5" name="what_coronavirus_help" type="checkbox" value="no needs">
@@ -1330,14 +831,6 @@
 
                             </div>
 
-
-
-
-
-
-
-
-
                             <div class="govuk-checkboxes__item">
                                 <input class="govuk-checkboxes__input" id="what_coronavirus_help-6" name="what_coronavirus_help" type="checkbox" value="debt and money">
                                 <label class="govuk-label govuk-checkboxes__label" for="what_coronavirus_help-6">
@@ -1345,14 +838,6 @@
                                 </label>
 
                             </div>
-
-
-
-
-
-
-
-
 
                             <div class="govuk-checkboxes__item">
                                 <input class="govuk-checkboxes__input" id="what_coronavirus_help-7" name="what_coronavirus_help" type="checkbox" value="health">
@@ -1362,29 +847,13 @@
 
                             </div>
 
-
-
-
-
-
-
-
-
                             <div class="govuk-checkboxes__item">
                                 <input class="govuk-checkboxes__input" id="what_coronavirus_help-8" name="what_coronavirus_help" type="checkbox" value="mental health">
                                 <label class="govuk-label govuk-checkboxes__label" for="what_coronavirus_help-8">
-                                    Mental health and wellbeing, including if you're feeling lonely or isolated
+                                    Mental health and wellbeing, including if you are feeling lonely or isolated
                                 </label>
 
                             </div>
-
-
-
-
-
-
-
-
 
                             <div class="govuk-checkboxes__item">
                                 <input class="govuk-checkboxes__input" id="what_coronavirus_help-9" name="what_coronavirus_help" type="checkbox" value="housing">
@@ -1394,18 +863,10 @@
 
                             </div>
 
-
-
-
-
-
-
-
-
                             <div class="govuk-checkboxes__item">
                                 <input class="govuk-checkboxes__input" id="what_coronavirus_help-10" name="what_coronavirus_help" type="checkbox" value="technology support">
                                 <label class="govuk-label govuk-checkboxes__label" for="what_coronavirus_help-10">
-                                    Accessing the internet, including support to use technology
+                                    Accessing the internet, including support to utilise technology
                                 </label>
 
                             </div>
@@ -1940,45 +1401,30 @@
 
 
     <h2 class="lbh-heading-h1">Case notes:</h2>
+    <br />
 
     <h3 class="lbh-heading-h3">Add a new case note (optional):</h3>
-
-
-
-
-
-
-
-
-
-
+    <br />
 
     <div class="govuk-form-group lbh-form-group">
-
-
-
 
   <span id="NewCaseNote-hint" class="govuk-hint  lbh-hint">
 
   </span>
 
-
         <textarea class="govuk-textarea  lbh-textarea" id="NewCaseNote" name="NewCaseNote" rows="5" aria-describedby="NewCaseNote-hint"></textarea>
     </div>
-
-
+    <br />
 
     <h3 class="lbh-heading-h3">Case note history:</h3>
+    <br />
     <input type="hidden" name="CaseNotes" value="">
-
+    <br />
 
     <p class="lbh-body-m"></p>
 
-
-
     <h3 class="lbh-heading-h3">Call attempts history:</h3>
-
-
+    <br />
 
     <hr>
 
