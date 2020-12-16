@@ -1,6 +1,5 @@
-<a href="#" onclick="window.history.go(-1); return false;" class="govuk-back-link  lbh-back-link">Back</a>
-
 <h1 class="lbh-heading-h1">Update resident profile</h1>
+<br />
 
 
 <form action="/help-requests/create" method="post">
@@ -11,6 +10,7 @@
             <div class="govuk-form-group lbh-form-group">
                 <input class="govuk-input  lbh-input" id="FirstName" name="FirstName" type="text">
             </div>
+            <br />
         </div>
         <div class="govuk-grid-column-one-third">
             <label class="govuk-label" for="LastName">Last name</label>
@@ -40,6 +40,7 @@
             </div>
         </div>
     </div>
+    <br />
 
     <h3 class="lbh-heading-h3">Date of birth</h3>
     <div class="govuk-form-group lbh-form-group">
@@ -72,17 +73,19 @@
             </div>
         </div>
     </div>
+    <br />
+
 
     <hr>
-
+    <br />
     <input type="hidden" name="building_number" id="building_number" value="">
     <input type="hidden" name="uprn" id="uprn" value="">
     <input type="hidden" name="ward" id="ward" value="">
     <input type="hidden" name="gazetteer" id="gazetteer" value="">
-
     <div class="govuk-grid-row">
         <div class="govuk-grid-column-one-half">
             <h3 class="lbh-heading-h3">Search address by postcode</h3>
+            <br />
 
 
 
@@ -124,6 +127,7 @@
         </div>
         <div class="govuk-grid-column-one-half">
             <h3 class="lbh-heading-h3">Selected address</h3>
+            <br />
 
 
 
@@ -210,7 +214,7 @@
 
         </div>
     </div>
-
+    <br />
     <hr>
 
 
@@ -283,8 +287,10 @@ For example, sharing your contact details with a charity so they can call you to
     </div>
 
     <hr />
+    <br />
 
     <h3>Alternate contact:</h3>
+    <br />
 
     <div class="govuk-grid-row">
         <div class="govuk-grid-column-one-third">
@@ -300,6 +306,7 @@ For example, sharing your contact details with a charity so they can call you to
             </div>
         </div>
     </div>
+    <br />
 
     <div class="govuk-grid-row">
         <div class="govuk-grid-column-one-third">
@@ -321,8 +328,10 @@ For example, sharing your contact details with a charity so they can call you to
             </div>
         </div>
     </div>
+    <br />
 
     <hr>
+    <br />
 
     <h3>Key notes</h3>
     <br />

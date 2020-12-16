@@ -1,10 +1,11 @@
+<a href="#" onclick="window.history.go(-1); return false;" class="govuk-back-link lbh-back-link" style="margin-top: -40px; display: block; border-bottom: none;">Back</a>
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-one-quarter-from-desktop sticky-magic">
         <?=HereToHelp\Helper::render("resident", "micro", false, false)?>
     </div>
 
     <div class="govuk-grid-column-full">
-        <a href="#" onclick="window.history.go(-1); return false;" class="govuk-back-link lbh-back-link" style="margin-top: -40px; display: block; border-bottom: none;">Back</a>
+
 
         <h1 style="margin-top: 0px; margin-bottom: 40px;">Name Surname</h1>
 
