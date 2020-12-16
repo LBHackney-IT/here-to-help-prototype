@@ -1,9 +1,9 @@
-<a href="/" class="govuk-back-link  lbh-back-link">Back</a>
+<a href="#" onclick="window.history.go(-1); return false;" class="govuk-back-link  lbh-back-link">Back</a>
 
 <h1 class="lbh-heading-h1">Callback list</h1>
-
+<br />
 <h3 class="lbh-heading-h3">Filter by Help Type:</h3>
-
+<br />
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-one-third">
         <select onchange="document.location = '/listcall?calltype=' + this.value" class="govuk-select">
@@ -30,6 +30,8 @@
         </select>
     </div>
 </div>
+
+<br />
 
 <p class="lbh-body-m">Displaying 2 record(s)</p>
 

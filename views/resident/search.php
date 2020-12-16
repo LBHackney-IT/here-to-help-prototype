@@ -1,7 +1,7 @@
 
 
 
-<a href="/" class="govuk-back-link  lbh-back-link">Back</a>
+<a href="#" onclick="window.history.go(-1); return false;" class="govuk-back-link  lbh-back-link">Back</a>
 
 
 

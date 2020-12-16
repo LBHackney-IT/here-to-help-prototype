@@ -8,7 +8,7 @@
 
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <link rel="stylesheet" type="text/css" href="/assets/application.css">
+        <link rel="stylesheet" type="text/css" href="/assets/application.css?hash=<?=rand()?>">
     </head>
     <body class="govuk-template__body ">
         <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>

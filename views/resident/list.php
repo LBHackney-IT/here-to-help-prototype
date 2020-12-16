@@ -1,13 +1,15 @@
 
-<a href="/searchresident" class="govuk-back-link  lbh-back-link">Back</a>
+<a href="#" onclick="window.history.go(-1); return false;" class="govuk-back-link  lbh-back-link">Back</a>
 
-
+    <br />
 
     <h1 class="lbh-heading-h1">Search results</h1>
 
+    <br />
 
         <h2 class="lbh-heading-h2">Help requests matching postcode: E8 1DY</h2>
 
+        <br />
         <p class="lbh-body-m">Displaying 2 record(s)</p>
 
         <div class="govuk-grid-row">

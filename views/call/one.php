@@ -1,4 +1,4 @@
-<a href="/oneresident" class="govuk-back-link  lbh-back-link">Back</a>
+<a href="#" onclick="window.history.go(-1); return false;" class="govuk-back-link  lbh-back-link">Back</a>
 
 <h2>Start a conversation</h2>
 
