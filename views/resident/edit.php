@@ -80,7 +80,7 @@
 
 
 
-                <input class="govuk-input govuk-input--width-10 lbh-input" id="lookup_postcode" name="lookup_postcode" type="text">
+                <input class="govuk-input govuk-input--width-10 lbh-input" id="lookup_postcode" name="lookup_postcode" type="text" value="<?=$_REQUEST["postcode"]?>">
             </div>
 
 

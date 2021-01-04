@@ -7,7 +7,7 @@
 
     <br />
 
-        <h2 class="lbh-heading-h2">Help requests matching postcode: E8 1DY</h2>
+        <h2 class="lbh-heading-h2">Help requests matching postcode: <?=$_REQUEST["postcode"]?></h2>
 
         <br />
         <p class="lbh-body-m">Displaying 2 record(s)</p>
@@ -25,7 +25,7 @@
             <div class="govuk-grid-column-one-half text-align-right">
 
 
-<a href="/editresident" role="button" draggable="false" class="govuk-button  lbh-button" data-module="govuk-button">
+<a href="/editresident?postcode=<?=$_REQUEST["postcode"]?>" role="button" draggable="false" class="govuk-button  lbh-button" data-module="govuk-button">
   Add new resident
 </a>
 

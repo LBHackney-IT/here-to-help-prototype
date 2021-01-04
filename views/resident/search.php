@@ -10,7 +10,7 @@
 
 
 
-  <form action="/listresident" method="post">
+  <form action="/listresident" >
 
     <div class="govuk-grid-row row-margin-top-m">
         <div class="govuk-grid-column-one-third">
