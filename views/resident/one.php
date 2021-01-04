@@ -4,7 +4,7 @@
         <?=HereToHelp\Helper::render("resident", "micro", false, false)?>
     </div>
 
-    <div class="govuk-grid-column-full">
+    <div class="govuk-grid-column-three-quarters-from-desktop">
 
 
         <h1 style="margin-top: 0px; margin-bottom: 40px;">Name Surname</h1>
@@ -33,31 +33,34 @@
             }
         ">
             <option value="">Filter by support type</option>
-            <option>Help Request</option>
-            <option>CEV</option>
-            <option>Welfare</option>
-            <option>Shielding</option>
+            <?php
+                $types = HereToHelp\Helper::$support_type;
+                foreach($types as $key=>$value):
+                    ?>
+                        <option value="<?=$key?>"<?=$_REQUEST['filter']==$key?" selected='selected'":""?>><?=$value?></option>
+                    <?php
+                endforeach;
+            ?>
         </select>
 
-        <div style="background-color: rgba(220, 233, 213, 1); padding: 20px; margin-top: 20px;" class="filter" data-type="Help Request">
-            <h4>8/12/2020 by Annalivia Ryan</h4>
-            <p>
-                Successful Help Request call<br />
-                Referrals: Food parcel, Shoreditch Trust<br />
-                Referral notes: Resident requested hot food, halal, gluten-free. Need to knock on the door as doorbell broken.<br />
-                Follow-up requested: Y<br />
-                Follow-up notes: Chase food parcel referral from Shoreditch Trust.
-            </p>
-        </div>
-        <div style="background-color: rgba(220, 233, 213, 1); padding: 20px; margin-top: 20px;" class="filter" data-type="Shielding">
-            <h4>1/12/2020 by Annalivia Ryan</h4>
-            <p>
-                Successful Help Request call<br />
-                Referrals: Food parcel, Shoreditch Trust<br />
-                Referral notes: Resident requested hot food, halal, gluten-free. Need to knock on the door as doorbell broken.<br />
-                Follow-up requested: Y<br />
-                Follow-up notes: Chase food parcel referral from Shoreditch Trust.
-            </p>
-        </div>
+        <?php
+            $names = HereToHelp\Helper::$fake_users;
+
+            foreach(array_fill(0, 10, "Random text") as $case_note):
+                $name = $names[array_rand($names)];
+                $type_key = array_rand($types);
+                $type = $types[$type_key];
+
+                ?>
+                    <div style="background-color: rgba(220, 233, 213, 1); padding: 20px; margin-top: 20px;<?=$_REQUEST['filter']&&$_REQUEST['filter']!=$type_key?" display: none; ":""?>" class="filter" data-type="<?=$type_key?>">
+                        <h4><?=date("Y-m-d", time()-(rand(1, 100)*60*60*24))?> by <?=$name?></h4>
+
+                        <p>
+                            <?=$type?>: <?=$case_note?>
+                        </p>
+                    </div>
+                <?php
+            endforeach;
+        ?>
     </div>
 </div>
