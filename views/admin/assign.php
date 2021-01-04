@@ -1,13 +1,48 @@
 <a href="#" onclick="window.history.go(-1); return false;" class="govuk-back-link  lbh-back-link">Back</a>
 
-<h1 class="lbh-heading-h1">Assign calls to initials</h1>
+<h1 class="lbh-heading-h1">Assign calls</h1>
 
 
-<form action="/" method="post">
-    <h3>Add initials to assign calls to</h3>
-    <textarea class="govuk-textarea  lbh-textarea" id="NewCaseNote" name="NewCaseNote" rows="5" aria-describedby="NewCaseNote-hint" spellcheck="false"></textarea>
+<form action="/assign" method="post">
+    <label class="govuk-label">Call types</label>
+    <select class="govuk-select">
+        <option value="">All</option>
+        <option>Help Request</option>
+        <option>CEV</option>
+        <option>Welfare</option>
+        <option>Shielding</option>
+    </select>
+    <br /><br />
 
-    <p class="govuk-body">Please write the initials of the people who will be handling calls today. When you click Assign, all current calls in the callback list will be reassigned to the initials you have specified. Separate the initials by commas.</p>
+    <h3>Select who is able to make calls today</h3>
+
+    <div class="govuk-checkboxes  lbh-checkboxes">
+        <?php
+
+            $staff = HereToHelp\Helper::$fake_users;
+
+            foreach($staff as $initials=>$name):
+                ?>
+                    <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="initial-<?=$initials?>" name="initial-<?=$initials?>" type="checkbox" value="<?=$initials?>" aria-describedby="CallOutcome-hint">
+                        <label class="govuk-label govuk-checkboxes__label" for="initial-<?=$initials?>">
+                            <?=$name?>
+                        </label>
+
+                    </div>
+                <?php
+            endforeach;
+        ?>
+    </div>
+
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-third">
+            <label class="govuk-label" for="ContactTelephoneNumber">Add new member of staff<br /></label>
+            <div class="govuk-form-group lbh-form-group">
+                <input class="govuk-input  lbh-input" id="ContactTelephoneNumber" name="ContactTelephoneNumber" type="tel" placeholder="Firstname Lastname">
+            </div>
+        </div>
+    </div>
 
     <div class="govuk-grid-row" id="btn-bottom-panel">
         <div class="govuk-grid-column-one-half">

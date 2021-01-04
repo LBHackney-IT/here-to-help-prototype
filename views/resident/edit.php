@@ -8,14 +8,14 @@
         <div class="govuk-grid-column-one-third">
             <label class="govuk-label" for="FirstName">First name</label>
             <div class="govuk-form-group lbh-form-group">
-                <input class="govuk-input  lbh-input" id="FirstName" name="FirstName" type="text">
+                <input class="govuk-input  lbh-input" id="FirstName" name="FirstName" type="text" value="John">
             </div>
             <br />
         </div>
         <div class="govuk-grid-column-one-third">
             <label class="govuk-label" for="LastName">Last name</label>
             <div class="govuk-form-group lbh-form-group">
-                <input class="govuk-input  lbh-input" id="LastName" name="LastName" type="text">
+                <input class="govuk-input  lbh-input" id="LastName" name="LastName" type="text"  value="Doe">
             </div>
         </div>
     </div>
@@ -39,37 +39,14 @@
                 <input class="govuk-input  lbh-input" id="EmailAddress" name="EmailAddress" type="text">
             </div>
         </div>
-    </div>
-    <br />
-
-    <h3 class="lbh-heading-h3">Date of birth</h3>
-    <div class="govuk-form-group lbh-form-group">
-        <div class="govuk-date-input  lbh-date-input">
-            <div class="govuk-date-input__item">
-                <div class="govuk-form-group">
-                    <label class="govuk-label govuk-date-input__label" for="DobDay">
-                        Day
-                    </label>
-                    <input class="govuk-input govuk-date-input__input govuk-input--width-2 " id="DobDay" name="DobDay" type="text" pattern="[0-9]*" inputmode="numeric">
-                </div>
-            </div>
-
-            <div class="govuk-date-input__item">
-                <div class="govuk-form-group">
-                    <label class="govuk-label govuk-date-input__label" for="DobMonth">
-                        Month
-                    </label>
-                    <input class="govuk-input govuk-date-input__input govuk-input--width-2 " id="DobMonth" name="DobMonth" type="text" pattern="[0-9]*" inputmode="numeric">
-                </div>
-            </div>
-
-            <div class="govuk-date-input__item">
-                <div class="govuk-form-group">
-                    <label class="govuk-label govuk-date-input__label" for="DobYear">
-                        Year
-                    </label>
-                    <input class="govuk-input govuk-date-input__input govuk-input--width-4 " id="DobYear" name="DobYear" type="text" pattern="[0-9]*" inputmode="numeric">
-                </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="govuk-grid-column-one-third">
+            <label class="govuk-label" for="DOB">Date of birth (YYYY-MM-DD)</label>
+            <div class="govuk-form-group lbh-form-group">
+                <input class="govuk-input  lbh-input" id="DOB" name="DOB" type="text" value="1995-06-07" placeholder="Eg. 1965-01-04">
             </div>
         </div>
     </div>

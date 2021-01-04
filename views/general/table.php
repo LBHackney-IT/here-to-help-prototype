@@ -9,11 +9,11 @@
         <select onchange="document.location = '/listcall?calltype=' + this.value" class="govuk-select">
             <option value="">Calltype</option>
             <?php
-            foreach(array("Contact Tracing", "Help Request", "Shielding", "Welfare Call") as $row):
-                ?>
-                <option value="<?=$row?>"<?=$row==$_REQUEST['calltype']?" selected='selected'":""?>><?=$row?></option>
-            <?php
-            endforeach;
+                foreach(HereToHelp\Helper::$support_type as $type=>$row):
+                    ?>
+                        <option value="<?=$type?>"<?=$type==$_REQUEST['calltype']?" selected='selected'":""?>><?=$row?></option>
+                    <?php
+                endforeach;
             ?>
         </select>
     </div>
@@ -21,11 +21,11 @@
         <select onchange="document.location = '/listcall?initials=' + this.value" class="govuk-select">
             <option value="">Assigned to</option>
             <?php
-            foreach(array("BD", "AR", "CK", "MW") as $row):
-                ?>
-                    <option value="<?=$row?>"<?=$row==$_REQUEST['initials']?" selected='selected'":""?>><?=$row?></option>
-                <?php
-            endforeach;
+                foreach(HereToHelp\Helper::$fake_users as $row=>$name):
+                    ?>
+                        <option value="<?=$row?>"<?=$row==$_REQUEST['initials']?" selected='selected'":""?>><?=$name?></option>
+                    <?php
+                endforeach;
             ?>
         </select>
     </div>
@@ -51,42 +51,37 @@
         </tr>
     </thead>
     <tbody class="govuk-table__body">
-        <tr class="govuk-table__row">
-            <td class="govuk-table__cell">
-                Name
-            </td>
-            <td class="govuk-table__cell">
-                Flat 4, Caliban
-            </td>
-            <td class="govuk-table__cell">2020/01/01</td>
-            <td class="govuk-table__cell"><?=$_REQUEST['calltype']?:'Contact Tracing'?></td>
+        <?php
+            foreach(range(1, 50) as $i):
+                $initial = array_rand(HereToHelp\Helper::$fake_users);
+                $support_type = array_rand(HereToHelp\Helper::$support_type);
 
+                if($_REQUEST['initials']&&$_REQUEST['initials']!=$initial) continue;
+                if($_REQUEST['calltype']&&$_REQUEST['calltype']!=$support_type) continue;
 
-            <td class="govuk-table__cell ">10</td>
-            <td class="govuk-table__cell">Y</td>
-            <td class="govuk-table__cell"><a href="/singleassign"><?=$_REQUEST['initials']?:'BD'?></a></td>
-            <td class="govuk-table__cell"></td>
-            <td class="govuk-table__cell">
-                <a data-testid="view-button" href="/oneresident?id=18" class="js-cta-btn" id="view-resident-18">View</a>
-            </td>
-        </tr>
+                $first_names = array("Abbot", "Mary", "John", "Nicolas", "Ben");
+                $last_names = array("Taliavare", "Johnson", "Stradivarius");
 
-        <tr class="govuk-table__row">
-            <td class="govuk-table__cell">
-                Name
-            </td>
-            <td class="govuk-table__cell">
-                Flat 4, Caliban
-            </td>
-            <td class="govuk-table__cell">2020/01/01</td>
-            <td class="govuk-table__cell"><?=$_REQUEST['calltype']?:'Contact Tracing'?></td>
-            <td class="govuk-table__cell ">10</td>
-            <td class="govuk-table__cell">Y</td>
-            <td class="govuk-table__cell"><a href="/singleassign"><?=$_REQUEST['initials']?:'BD'?></a></td>
-            <td class="govuk-table__cell">2020/12/15 12:30</td>
-            <td class="govuk-table__cell">
-                <a data-testid="view-button" href="/oneresident?id=18" class="js-cta-btn" id="view-resident-18">View</a>
-            </td>
-        </tr>
+                ?>
+                    <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">
+                            <?=$first_names[array_rand($first_names)]?> <?=$last_names[array_rand($last_names)]?>
+                        </td>
+                        <td class="govuk-table__cell">
+                            Flat <?=rand(1, 50)?>, Caliban
+                        </td>
+                        <td class="govuk-table__cell"><?=date("Y-m-d", time()-(rand(1, 100)*60*60*24))?></td>
+                        <td class="govuk-table__cell"><span title="<?=HereToHelp\Helper::$support_type[$support_type]?>"><?=$support_type?></span></td>
+                        <td class="govuk-table__cell "><?=rand(0, 20)?></td>
+                        <td class="govuk-table__cell"><?=rand(0, 1)?"Y":"N"?></td>
+                        <td class="govuk-table__cell"><a href="/singleassign" title="<?=HereToHelp\Helper::$fake_users[$initial]?>"><?=$initial?>✎</a></td>
+                        <td class="govuk-table__cell"><?=!rand(0, 10)?date("Y-m-d H:i", time()+(rand(0, 60*60*24))):""?></td>
+                        <td class="govuk-table__cell">
+                            <a data-testid="view-button" href="/oneresident?id=18" class="js-cta-btn" id="view-resident-18">View</a>
+                        </td>
+                    </tr>
+                <?php
+            endforeach;
+        ?>
     </tbody>
 </table>

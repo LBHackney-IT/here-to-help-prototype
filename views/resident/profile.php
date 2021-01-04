@@ -31,21 +31,21 @@
                     <td scope="row" class="govuk-table__cell">Contact tracing</td>
                     <td class="govuk-table__cell">Call rescheduled</td>
                     <td class="govuk-table__cell govuk-table__cell--numeric">
-                        <a href="/onecall">View</a>
+                        <a href="/onecall?filter=ct">View</a>
                     </td>
                 </tr>
                 <tr class="govuk-table__row">
                     <td scope="row" class="govuk-table__cell">Shielding</td>
                     <td class="govuk-table__cell">Follow-up</td>
                     <td class="govuk-table__cell govuk-table__cell--numeric">
-                        <a href="/onecall">View</a>
+                        <a href="/onecall?filter=shield">View</a>
                     </td>
                 </tr>
                 <tr class="govuk-table__row">
                     <td scope="row" class="govuk-table__cell">Help Requested</td>
                     <td class="govuk-table__cell">Call</td>
                     <td class="govuk-table__cell govuk-table__cell--numeric">
-                        <a href="/onecall">View</a>
+                        <a href="/onecall?filter=hr">View</a>
                     </td>
                 </tr>
                 <?php
@@ -93,12 +93,12 @@
                 <tr class="govuk-table__row">
                   <td class="govuk-table__cell">Contact Tracing</td>
                   <td class="govuk-table__cell">5</td>
-                  <td class="govuk-table__cell"><a href="/oneresident?received=true#past-week">View</a></td>
+                  <td class="govuk-table__cell"><a href="/oneresident?received=true&filter=ct#past-week">View</a></td>
                 </tr>
                 <tr class="govuk-table__row">
                   <td class="govuk-table__cell">CEV</td>
                   <td class="govuk-table__cell">2</td>
-                  <td class="govuk-table__cell"><a href="/oneresident?received=true#past-week">View</a></td>
+                  <td class="govuk-table__cell"><a href="/oneresident?received=true&filter=cev#past-week">View</a></td>
                 </tr>
               </tbody>
             </table>
@@ -108,5 +108,7 @@
   </div>
 </div>
 <p>
-    <a href="/editcall?new=true" class="govuk-link">+ Add new support</a>
+    <a href="/editcall?new=true" role="button" draggable="false" class="govuk-button  lbh-button" data-module="govuk-button">
+        + Add new support
+    </a>
 </p>
