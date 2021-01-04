@@ -4,6 +4,8 @@ namespace HereToHelp;
 
 class Helper {
     static $controllers = array("call", "journey", "resident");
+    static $fake_users = array("ar"=>"Annalivia Ryan", "bd"=>"Ben Dalton", "lt"=>"Liudvikas T", "mw"=>"Marten Wetterberg");
+    static $support_type = array("hr"=>"Help Request", "cev"=>"CEV", "welfare"=>"Welfare", "shield"=>"Shielding", "ct"=>"Contact tracing");
 
     function __construct($view = false) {
         if(!$view) $view = "start";
