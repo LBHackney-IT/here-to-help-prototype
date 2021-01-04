@@ -1,4 +1,4 @@
-<div class="govuk-tag--grey" style="padding: 20px; margin-bottom: 20px; position: relative; font-family: sans-serif;">
+<div style="padding: 20px; margin-bottom: 20px; position: relative; font-family: sans-serif; border: 1px solid #b1b4b6;">
     <h3 style="font-family: sans-serif; font-size: 22px">Contact details</h3>
     <br />
     <p>Phone 1: 0292848<br />
@@ -23,7 +23,7 @@ text-align: center; color: #090; margin: 0; padding: 0;">
     </a>
 </div>
 
-<div class="govuk-tag--grey" style="padding: 20px; position: relative; font-family: sans-serif;">
+<div style="padding: 20px; position: relative; font-family: sans-serif; border: 1px solid #b1b4b6;">
     <h3 style="font-family: sans-serif; font-size: 20px">Key information</h3>
     <br />
     <p>CEV<br />
