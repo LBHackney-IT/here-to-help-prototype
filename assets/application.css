@@ -4364,3 +4364,30 @@ label[for="HelpNeeded-3"] {
         top: 0;
     }
 }
+
+.minimize {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: transform ease-in .7s;
+}
+
+.sticky-magic div {
+    max-height: 1000px;
+    overflow: hidden;
+    transition: max-height ease-in .7s;
+}
+
+.sticky-magic.hidden div {
+    max-height: 24px;
+}
+
+.minimize:after {
+    content: "▲";
+}
+
+.hidden .minimize {
+    transform: rotate(180deg);
+}

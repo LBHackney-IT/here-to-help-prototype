@@ -41,3 +41,5 @@ text-align: center; color: #090; margin: 0; padding: 0;">
     <br />
     <p>Calls Helpline often, highly anxious about Covid</p>
 </div>
+
+<a href="#" class="minimize" onclick="document.getElementsByClassName('sticky-magic')[0].classList.toggle('hidden')"></a>
