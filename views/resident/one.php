@@ -6,7 +6,6 @@
 
     <div class="govuk-grid-column-three-quarters-from-desktop">
 
-
         <h1 style="margin-top: 0px; margin-bottom: 40px;">Name Surname</h1>
 
         <?=HereToHelp\Helper::render(next($folder), next($file), $content, $id)?>
