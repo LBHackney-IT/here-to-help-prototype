@@ -44,9 +44,9 @@
         <br />
         <br />
         <div class="govuk-grid-column-one-third">
-            <label class="govuk-label" for="DOB">Date of birth (YYYY-MM-DD)</label>
+            <label class="govuk-label" for="DOB">Date of birth (DD-MM-YYYY)</label>
             <div class="govuk-form-group lbh-form-group">
-                <input class="govuk-input  lbh-input" id="DOB" name="DOB" type="text" value="1995-06-07" placeholder="Eg. 1965-01-04">
+                <input class="govuk-input  lbh-input" id="DOB" name="DOB" type="text" value="DD-MM-YYYY" placeholder="Eg. 01-04-1965">
             </div>
         </div>
     </div>
